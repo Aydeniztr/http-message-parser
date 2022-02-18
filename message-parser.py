@@ -12,10 +12,12 @@ banner = '''
 '''
 
 msg = '''
-
+authow:Aydeniztr
 '''
 
 usg = '''
+usage: 
+python3 message-parser.py <url>
 
 '''
 
