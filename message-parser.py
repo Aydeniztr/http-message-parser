@@ -1,5 +1,5 @@
-import urllib.request 
-import sys
+from urllib.request import urlopen
+from sys import argv
 
 banner = '''
   ,                                      
@@ -23,29 +23,29 @@ python3 message-parser.py <url>
 
 def get_mag(link)
 
-	meta = urllib.request.urlopen(link)
+	meta = urlopen(link)
 
 	u = meta.info()
 
 	print(u)
 	
-if len(sys.argv) <= 1:
+if len(argv) <= 1:
 	
 	print(banner+msg+usg)
 	
-elif sys.argv[1] == '-v' or '--version'
+elif argv[1] == '--version'
 
 	print('ver:'+ version)
 	exit()
 
 
-elif sys.argv[1] == '--about'
+elif argv[1] == '--about'
 	print(msg)
 
-elif sys.argv[1] == '--help'
+elif argv[1] == '--help'
 	print(usg)
 else:
 	
 	print(banner)
-	get_msg(sys.argv[1])
+	get_msg(argv[1])
 	print('sending request to the' + sys.argv[1])
