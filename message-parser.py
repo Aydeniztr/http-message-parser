@@ -48,7 +48,7 @@ version:1.0.4
 '''
 def get_msg(link):
 
-	print('sending request to the' + argv[1])
+	print('sending request to the ' + argv[1])
 
 	meta = urlopen(link)
 
